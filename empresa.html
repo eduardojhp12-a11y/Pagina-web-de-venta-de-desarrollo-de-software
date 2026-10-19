@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Metadatos Corporativos -->
+  <title>Empresa & Trayectoria | Cyberion — Ingeniería de Software Venezuela</title>
+  <meta name="description" content="Conoce la filosofía, principios de ingeniería, stack tecnológico y ventajas de Cyberion frente a agencias tradicionales y freelancers en Venezuela y Latam.">
+  <meta name="keywords" content="cyberion empresa, desarrollo de software venezuela, equipo de ingenieros venezuela, clean code, arquitectura cloud, caracas">
+  <meta name="author" content="Cyberion Engineering Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F8FAFC">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cyberion Venezuela">
+  <meta property="og:title" content="Empresa & Trayectoria | Cyberion">
+  <meta property="og:description" content="Conoce la firma de ingeniería de software que está transformando el desarrollo web y los sistemas comerciales en Venezuela.">
+  <meta property="og:image" content="icono.png">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Oficial Circuit Emblem -->
+  <link rel="icon" type="image/jpeg" href="icono.png">
+  <link rel="icon" type="image/png" href="icono.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icono.png">
+</head>
+<body class="site-body">
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- NAVBAR PRINCIPAL -->
+  <header class="navbar" id="site-header" role="banner">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand" aria-label="Cyberion - Página de Inicio">
+        <span class="navbar__logo-icon" aria-hidden="true">
+          <img src="icono.png" alt="Cyberion Logo" class="navbar__logo-img" width="34" height="34">
+        </span>
+        <span class="navbar__logo-text">CYBERION<span class="navbar__logo-dot">.</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="primary-navigation" role="navigation" aria-label="Navegación principal">
+        <ul class="navbar__menu" role="menubar">
+          <li class="navbar__item" role="none">
+            <a href="index.html" class="navbar__link" role="menuitem" data-nav-link>Inicio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="empresa.html" class="navbar__link navbar__link--active" role="menuitem" data-nav-link>Empresa</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="servicios.html" class="navbar__link" role="menuitem" data-nav-link>Soluciones</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="cotizador.html" class="navbar__link" role="menuitem" data-nav-link>Cotizador</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="portafolio.html" class="navbar__link" role="menuitem" data-nav-link>Portafolio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="contacto.html" class="navbar__link" role="menuitem" data-nav-link>Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <button type="button" class="navbar__theme-btn" id="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">
+          <span class="navbar__theme-icon-box" aria-hidden="true">
+            <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <a href="cotizador.html" class="navbar__cta-btn" id="navbar-cta-quote">
+          <span class="navbar__cta-text">Cotizador en Vivo</span>
+          <svg class="navbar__cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button type="button" class="navbar__toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú de navegación">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- CABECERA DE PÁGINA -->
+    <section class="page-header">
+      <div class="page-header__container">
+        <span class="page-header__eyebrow">Identidad &bull; Visión &bull; Estándares</span>
+        <h1 class="page-header__title">Ingeniería de Software con Estándares Globales</h1>
+        <p class="page-header__description">
+          Conectamos la visión estratégica empresarial con una ejecución técnica sin fisuras. Creamos infraestructuras cloud resilientes, aplicaciones de baja latencia y software propietario adaptado a los desafíos de Venezuela y América Latina.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN ABOUT / PESTAÑAS INTERACTIVAS -->
+    <section class="about" id="about" style="padding-top: var(--space-2xl);" aria-labelledby="about-title">
+      <div class="about__container">
+        <!-- Barra de Pestañas Interactivas -->
+        <div class="about__tabs-nav" role="tablist" aria-label="Secciones informativas de Cyberion">
+          <button type="button" class="about__tab-btn about__tab-btn--active" role="tab" id="tab-empresa" aria-selected="true" aria-controls="panel-empresa" data-about-tab="empresa">
+            <svg class="about__tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M7 3h10v4H7zM9 11h2M13 11h2M9 15h2M13 15h2"/></svg>
+            <span>Quiénes Somos</span>
+          </button>
+          <button type="button" class="about__tab-btn" role="tab" id="tab-principios" aria-selected="false" aria-controls="panel-principios" data-about-tab="principios">
+            <svg class="about__tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Nuestros Principios</span>
+          </button>
+          <button type="button" class="about__tab-btn" role="tab" id="tab-comparativa" aria-selected="false" aria-controls="panel-comparativa" data-about-tab="comparativa">
+            <svg class="about__tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span>Por Qué Elegirnos</span>
+          </button>
+          <button type="button" class="about__tab-btn" role="tab" id="tab-stack" aria-selected="false" aria-controls="panel-stack" data-about-tab="stack">
+            <svg class="about__tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Stack Tecnológico</span>
+          </button>
+        </div>
+
+        <!-- Paneles de Contenido de Pestañas -->
+        <div class="about__panels">
+          <!-- Panel 1: Quiénes Somos -->
+          <div class="about__panel about__panel--active" id="panel-empresa" role="tabpanel" aria-labelledby="tab-empresa">
+            <div class="about__overview-grid">
+              <div class="about__overview-main">
+                <div class="about__badge-tech">
+                  <span class="about__badge-dot"></span>
+                  <span>Ingeniería de Software &bull; Venezuela &bull; Cobertura Nacional e Internacional</span>
+                </div>
+                <h3 class="about__panel-heading">Impulsando plataformas digitales y sistemas comerciales en Venezuela</h3>
+                <p class="about__panel-p">
+                  En <strong>Cyberion</strong> desarrollamos páginas web profesionales, tiendas online con WhatsApp y sistemas administrativos a medida para comercios, empresas e industrias en Venezuela. Resolvemos los desafíos reales del país: sincronización con la tasa oficial BCV, cobros por Pago Móvil, Zelle y Binance Pay, y funcionamiento continuo incluso ante contingencias de red.
+                </p>
+                <p class="about__panel-p">
+                  Brindamos atención técnica y asesoría presencial o remota en <strong>Caracas, Valencia, Maracaibo, Barquisimeto</strong> y toda Venezuela, con huso horario local (GMT-4), contratos formales de desarrollo y soporte post-lanzamiento garantizado.
+                </p>
+
+                <div class="about__highlights-row">
+                  <div class="about__highlight-card">
+                    <span class="about__highlight-num">100%</span>
+                    <span class="about__highlight-text">Código Propietario del Cliente (Sin Lock-in)</span>
+                  </div>
+                  <div class="about__highlight-card">
+                    <span class="about__highlight-num">&lt; 4h</span>
+                    <span class="about__highlight-text">SLA de Respuesta Técnica y Asistencia Crítica</span>
+                  </div>
+                  <div class="about__highlight-card">
+                    <span class="about__highlight-num">90 Días</span>
+                    <span class="about__highlight-text">Garantía Total de Estabilidad Post-Lanzamiento</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about__overview-side">
+                <div class="about__mission-card">
+                  <div class="about__mission-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                  </div>
+                  <h4 class="about__mission-title">Nuestra Misión</h4>
+                  <p class="about__mission-desc">
+                    Entregar ingeniería de software de élite que elimine el riesgo operativo y permita a las empresas escalar con confianza, agilidad y rendimiento récord.
+                  </p>
+                </div>
+
+                <div class="about__mission-card about__mission-card--violet">
+                  <div class="about__mission-icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="M12 2v20"/></svg>
+                  </div>
+                  <h4 class="about__mission-title">Nuestra Visión</h4>
+                  <p class="about__mission-desc">
+                    Ser la firma de referencia tecnológica para fundadores y corporativos que requieren soluciones no convencionales, escalables y tolerantes a fallos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Principios -->
+          <div class="about__panel" id="panel-principios" role="tabpanel" aria-labelledby="tab-principios" hidden>
+            <div class="about__principles-grid">
+              <div class="principle-card">
+                <span class="principle-card__num">01</span>
+                <h4 class="principle-card__title">Cero Deuda Técnica</h4>
+                <p class="principle-card__desc">
+                  No cortamos esquinas. Aplicamos Domain-Driven Design (DDD), Clean Architecture, pruebas unitarias y de integración automáticas (&gt;85% code coverage) en cada commit.
+                </p>
+                <div class="principle-card__meta">CI/CD &bull; SonarQube &bull; TypeScript Estricto</div>
+              </div>
+
+              <div class="principle-card">
+                <span class="principle-card__num">02</span>
+                <h4 class="principle-card__title">Obsesión por el Rendimiento</h4>
+                <p class="principle-card__desc">
+                  Cada milisegundo de latencia cuesta dinero. Optimizamos para lograr 99/100 en Google Core Web Vitals, tiempos TTFB menores a 100ms y consumos de memoria mínimos.
+                </p>
+                <div class="principle-card__meta">Core Web Vitals &bull; Edge Caching &bull; P99 &lt; 25ms</div>
+              </div>
+
+              <div class="principle-card">
+                <span class="principle-card__num">03</span>
+                <h4 class="principle-card__title">Propiedad Intelectual Total</h4>
+                <p class="principle-card__desc">
+                  El cliente es dueño absoluto de cada línea de código, pipeline, infraestructura como código y documentación. Sin licencias ocultas ni ataduras a plataformas propietarias.
+                </p>
+                <div class="principle-card__meta">Transferencia Git &bull; Documentación OpenAPI &bull; Licencia MIT/Comercial</div>
+              </div>
+
+              <div class="principle-card">
+                <span class="principle-card__num">04</span>
+                <h4 class="principle-card__title">Transparencia Radical</h4>
+                <p class="principle-card__desc">
+                  Sin jerga confusa ni estimaciones infladas. Demostraciones funcionales cada 14 días en entornos staging vivos, acceso directo a tus desarrolladores y métricas en tiempo real.
+                </p>
+                <div class="principle-card__meta">Demos Quincenales &bull; Canal Slack Directo &bull; Jira/Linear Compartido</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Comparativa -->
+          <div class="about__panel" id="panel-comparativa" role="tabpanel" aria-labelledby="tab-comparativa" hidden>
+            <div class="about__compare-box">
+              <div class="about__compare-header">
+                <h3 class="about__compare-title">Cyberion frente al resto de alternativas</h3>
+                <p class="about__compare-sub">Descubre por qué líderes tecnológicos migran sus proyectos a nuestra metodología de ingeniería:</p>
+              </div>
+
+              <div class="about__compare-table-wrapper">
+                <table class="about__compare-table" aria-label="Comparativa entre Cyberion, Agencias Tradicionales y Freelancers">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="th-feature">Criterio Técnico / Entrega</th>
+                      <th scope="col" class="th-cyberion">Cyberion Studio</th>
+                      <th scope="col" class="th-traditional">Agencias Tradicionales</th>
+                      <th scope="col" class="th-freelance">Freelancers Aislados</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Velocidad de MVP / Lanzamiento</th>
+                      <td class="td-cyberion"><span class="badge-win">4 - 8 Semanas (Ágil)</span></td>
+                      <td class="td-other">4 - 8 Meses (Burocrático)</td>
+                      <td class="td-other">Impredecible / Retrasos</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Arquitectura & Escalabilidad</th>
+                      <td class="td-cyberion"><span class="badge-win">Cloud-Native & Microservicios</span></td>
+                      <td class="td-other">Monolitos difíciles de escalar</td>
+                      <td class="td-other">Estructura sin estándares</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Propiedad del Código Fuente</th>
+                      <td class="td-cyberion"><span class="badge-win">100% Cliente (Día 1)</span></td>
+                      <td class="td-other">Lock-in / Licencias anuales</td>
+                      <td class="td-other">Sin transferencias formales</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Acuerdo de Confidencialidad (NDA)</th>
+                      <td class="td-cyberion"><span class="badge-win">Blindaje Mutuo por Defecto</span></td>
+                      <td class="td-other">Reticentes o costo adicional</td>
+                      <td class="td-other">Cero respaldo legal</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Pruebas Automatizadas & QA</th>
+                      <td class="td-cyberion"><span class="badge-win">&gt; 85% Cobertura CI/CD</span></td>
+                      <td class="td-other">QA manual superficial</td>
+                      <td class="td-other">Casi inexistente</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Garantía Post-Lanzamiento</th>
+                      <td class="td-cyberion"><span class="badge-win">90 Días Soporte Incluido</span></td>
+                      <td class="td-other">Costo por hora elevado</td>
+                      <td class="td-other">Disponibilidad incierta</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 4: Stack Tecnológico -->
+          <div class="about__panel" id="panel-stack" role="tabpanel" aria-labelledby="tab-stack" hidden>
+            <div class="about__stack-showcase">
+              <div class="about__stack-intro">
+                <h3 class="about__stack-title">Tecnologías de Producción de Máximo Nivel</h3>
+                <p class="about__stack-desc">Seleccionamos cada herramienta en función de latencia, estabilidad y soporte a largo plazo de la industria:</p>
+              </div>
+
+              <div class="about__stack-categories">
+                <!-- Categoria 1 -->
+                <div class="stack-category">
+                  <div class="stack-category__header">
+                    <span class="stack-category__badge">Frontend & Web</span>
+                    <span class="stack-category__caption">Interfaces reactivas ultrarrápidas</span>
+                  </div>
+                  <div class="stack-category__chips">
+                    <span class="stack-chip">TypeScript</span>
+                    <span class="stack-chip">React / Next.js</span>
+                    <span class="stack-chip">Vue.js / Nuxt</span>
+                    <span class="stack-chip">Vanilla CSS Moderno</span>
+                    <span class="stack-chip">WebAssembly</span>
+                  </div>
+                </div>
+
+                <!-- Categoria 2 -->
+                <div class="stack-category">
+                  <div class="stack-category__header">
+                    <span class="stack-category__badge stack-category__badge--violet">Backend & APIs</span>
+                    <span class="stack-category__caption">Microservicios de alta concurrencia</span>
+                  </div>
+                  <div class="stack-category__chips">
+                    <span class="stack-chip">Go (Golang)</span>
+                    <span class="stack-chip">Node.js / NestJS</span>
+                    <span class="stack-chip">Python / FastAPI</span>
+                    <span class="stack-chip">GraphQL / gRPC</span>
+                    <span class="stack-chip">Kafka / Redis Cluster</span>
+                  </div>
+                </div>
+
+                <!-- Categoria 3 -->
+                <div class="stack-category">
+                  <div class="stack-category__header">
+                    <span class="stack-category__badge">Cloud & DevOps</span>
+                    <span class="stack-category__caption">Infraestructura tolerante a fallos</span>
+                  </div>
+                  <div class="stack-category__chips">
+                    <span class="stack-chip">AWS / GCP / Cloudflare</span>
+                    <span class="stack-chip">Docker & Kubernetes</span>
+                    <span class="stack-chip">Terraform (IaC)</span>
+                    <span class="stack-chip">GitHub Actions CI/CD</span>
+                    <span class="stack-chip">Datadog / Prometheus</span>
+                  </div>
+                </div>
+
+                <!-- Categoria 4 -->
+                <div class="stack-category">
+                  <div class="stack-category__header">
+                    <span class="stack-category__badge stack-category__badge--violet">Datos & Seguridad</span>
+                    <span class="stack-category__caption">Cifrado, persistencia y AI</span>
+                  </div>
+                  <div class="stack-category__chips">
+                    <span class="stack-chip">PostgreSQL & Redis</span>
+                    <span class="stack-chip">MongoDB & Elasticsearch</span>
+                    <span class="stack-chip">Pinecone Vector DB</span>
+                    <span class="stack-chip">OWASP Top 10 Security</span>
+                    <span class="stack-chip">Cifrado AES-256</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra Inferior de Garantías y Certificaciones -->
+        <div class="about__guarantees-bar">
+          <div class="about__guarantee-item">
+            <svg class="about__guarantee-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div>
+              <strong>Seguridad Certificada</strong>
+              <span>Pruebas de vulnerabilidad periódicas OWASP</span>
+            </div>
+          </div>
+          <div class="about__guarantee-item">
+            <svg class="about__guarantee-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <div>
+              <strong>Confidencialidad Blindada</strong>
+              <span>Acuerdo NDA firmado digitalmente antes de iniciar</span>
+            </div>
+          </div>
+          <div class="about__guarantee-item">
+            <svg class="about__guarantee-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div>
+              <strong>SLA 99.98% Cloud</strong>
+              <span>Infraestructuras serverless y multi-región</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Directo al Cotizador -->
+        <div style="margin-top: var(--space-3xl); text-align: center; padding: var(--space-2xl); background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-xl);">
+          <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: var(--space-sm); color: var(--color-text-primary);">¿Listo para construir software que marque la diferencia?</h3>
+          <p style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--space-lg); line-height: 1.6;">
+            Obtén un presupuesto exacto en minutos en Dólares ($) o Bolívares (Bs.) con nuestro simulador en tiempo real.
+          </p>
+          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+            <a href="cotizador.html" class="hero__cta hero__cta--primary">
+              <span>Ir al Cotizador en Vivo</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="contacto.html" class="hero__cta hero__cta--secondary">
+              <span>Contactar a un Ingeniero</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand-col">
+          <a href="index.html" class="footer__brand" aria-label="Cyberion - Volver arriba">
+            <span class="footer__logo-icon" aria-hidden="true">
+              <img src="icono.png" alt="Cyberion Logo" class="footer__logo-img" width="32" height="32">
+            </span>
+            <span class="footer__logo-text">CYBERION<span class="footer__logo-dot">.</span></span>
+          </a>
+          <p class="footer__tagline">
+            Ingeniería de software de vanguardia, sistemas distribuidos de baja latencia y experiencias web creadas para dominar industrias competitivas en Venezuela y América Latina.
+          </p>
+          <div class="footer__system-status" role="status">
+            <span class="footer__status-indicator" aria-hidden="true"></span>
+            <span class="footer__status-text">Todos los sistemas operativos &middot; 99.99% Cloud SLA</span>
+          </div>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Navegación</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="index.html" class="footer__link">Inicio</a></li>
+            <li class="footer__item"><a href="empresa.html" class="footer__link">Empresa</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Soluciones</a></li>
+            <li class="footer__item"><a href="cotizador.html" class="footer__link">Cotizador en Vivo</a></li>
+            <li class="footer__item"><a href="portafolio.html" class="footer__link">Casos de Éxito</a></li>
+            <li class="footer__item"><a href="contacto.html" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Especialidades</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Puntos de Venta (POS) & Facturación</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">E-Commerce WhatsApp Automatizado</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Plataformas Web Corporativas B2B</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">SaaS & Sistemas Administrativos</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Apps Móviles Nativas e Híbridas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Ecosistema</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>GitHub Enterprise</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>LinkedIn Corporate</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20deseo%20conocer%20m%C3%A1s%20sobre%20su%20empresa%20y%20servicios" target="_blank" rel="noopener noreferrer" class="footer__link">
+                <span>Atención WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          &copy; <span id="current-year">2026</span> Cyberion Technologies LLC. Todos los derechos reservados.
+        </div>
+        <div class="footer__legal">
+          <a href="#privacy" class="footer__legal-link">Aviso de Privacidad</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#terms" class="footer__legal-link">Términos de Servicio</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#security" class="footer__legal-link">Protocolos de Seguridad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de Acción Rápida (WhatsApp) -->
+  <div class="floating-quick-actions" aria-label="Acciones rápidas de contacto">
+    <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20deseo%20conocer%20m%C3%A1s%20sobre%20su%20empresa%20y%20servicios" class="floating-action-btn floating-action-btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <span class="floating-action-btn__icon" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.072 6.223-1.633c1.7 1 3.7 1.633 5.877 1.633 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

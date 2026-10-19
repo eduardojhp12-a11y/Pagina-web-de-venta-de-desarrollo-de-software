@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Metadatos Corporativos -->
+  <title>Cotizador Interactivo de Software & Web en Venezuela | Cyberion</title>
+  <meta name="description" content="Calcula al instante la inversión de tu página web, tienda online WhatsApp, sistema POS o app móvil en Venezuela. Cotización en Dólares ($) y Bolívares (Bs.) con tasa oficial BCV.">
+  <meta name="keywords" content="cotizador software venezuela, cuanto cuesta pagina web venezuela, precio sistema pos bcv, cotizar tienda online caracas, presupuesto desarrollo software">
+  <meta name="author" content="Cyberion Engineering Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F8FAFC">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cyberion Venezuela">
+  <meta property="og:title" content="Cotizador en Tiempo Real | Cyberion Venezuela">
+  <meta property="og:description" content="Simula tu presupuesto de desarrollo web y software con precios transparentes en USD y Bolívares a tasa oficial BCV.">
+  <meta property="og:image" content="icono.png">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Oficial Circuit Emblem -->
+  <link rel="icon" type="image/jpeg" href="icono.png">
+  <link rel="icon" type="image/png" href="icono.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icono.png">
+</head>
+<body class="site-body">
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- NAVBAR PRINCIPAL -->
+  <header class="navbar" id="site-header" role="banner">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand" aria-label="Cyberion - Página de Inicio">
+        <span class="navbar__logo-icon" aria-hidden="true">
+          <img src="icono.png" alt="Cyberion Logo" class="navbar__logo-img" width="34" height="34">
+        </span>
+        <span class="navbar__logo-text">CYBERION<span class="navbar__logo-dot">.</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="primary-navigation" role="navigation" aria-label="Navegación principal">
+        <ul class="navbar__menu" role="menubar">
+          <li class="navbar__item" role="none">
+            <a href="index.html" class="navbar__link" role="menuitem" data-nav-link>Inicio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="empresa.html" class="navbar__link" role="menuitem" data-nav-link>Empresa</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="servicios.html" class="navbar__link" role="menuitem" data-nav-link>Soluciones</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="cotizador.html" class="navbar__link navbar__link--active" role="menuitem" data-nav-link>Cotizador</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="portafolio.html" class="navbar__link" role="menuitem" data-nav-link>Portafolio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="contacto.html" class="navbar__link" role="menuitem" data-nav-link>Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <button type="button" class="navbar__theme-btn" id="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">
+          <span class="navbar__theme-icon-box" aria-hidden="true">
+            <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <a href="cotizador.html" class="navbar__cta-btn" id="navbar-cta-quote">
+          <span class="navbar__cta-text">Cotizador en Vivo</span>
+          <svg class="navbar__cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button type="button" class="navbar__toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú de navegación">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- CABECERA DE PÁGINA -->
+    <section class="page-header">
+      <div class="page-header__container">
+        <span class="page-header__eyebrow">Simulador de Inversión &bull; Venezuela &bull; Precios 2024-2026</span>
+        <h1 class="page-header__title">Cotizador Interactivo de Software & Páginas Web</h1>
+        <p class="page-header__description">
+          Configura las características y necesidades de tu negocio. Estimación calculada con el promedio real del mercado en Venezuela con cobro en <strong>Dólares ($ USD)</strong> y en <strong>Bolívares (Bs. VES)</strong> según la tasa oficial de referencia.
+        </p>
+      </div>
+    </section>
+
+    <!-- COTIZADOR EN TIEMPO REAL -->
+    <section class="quote-calculator" id="quote-calculator" style="padding-top: var(--space-2xl);" aria-labelledby="calculator-title">
+      <div class="quote-calculator__container">
+        <div class="quote-calculator__layout">
+          <!-- Columna Izquierda: Opciones y Filtros -->
+          <div class="quote-calculator__main">
+            <!-- Selector de Moneda y Tasa BCV -->
+            <div class="quote-calculator__currency-bar">
+              <div class="quote-calculator__currency-controls">
+                <span class="quote-calculator__currency-label">Modo de Moneda:</span>
+                <div class="quote-calculator__currency-switcher" role="radiogroup" aria-label="Seleccionar modo de moneda para cotización">
+                  <button type="button" class="quote-calculator__curr-btn quote-calculator__curr-btn--active" data-currency="DUAL" aria-checked="true">
+                    <span class="curr-btn-text--full">Ambas Divisas ($ / Bs.)</span>
+                    <span class="curr-btn-text--short">Ambas ($/Bs.)</span>
+                  </button>
+                  <button type="button" class="quote-calculator__curr-btn" data-currency="USD" aria-checked="false">
+                    <span class="curr-btn-text--full">Dólares ($ USD)</span>
+                    <span class="curr-btn-text--short">Dólares ($)</span>
+                  </button>
+                  <button type="button" class="quote-calculator__curr-btn" data-currency="VES" aria-checked="false">
+                    <span class="curr-btn-text--full">Bolívares (Bs. VES)</span>
+                    <span class="curr-btn-text--short">Bolívares (Bs.)</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Indicador de Tasa Oficial BCV en Vivo (Automática y No Editable) -->
+              <div class="quote-calculator__bcv-box" id="bcv-rate-box" title="Tasa oficial sincronizada en tiempo real con el Banco Central de Venezuela (BCV)">
+                <div class="bcv-rate-info">
+                  <span class="bcv-rate-dot" aria-hidden="true"></span>
+                  <span class="bcv-rate-text">BCV Oficial en Vivo: <strong>1 USD = <span id="bcv-rate-display">881.07</span> Bs.</strong> &bull; 1 EUR = <strong id="bcv-rate-eur-display">991.16</strong> Bs.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 1: Tipo de Solución en Venezuela -->
+            <fieldset class="quote-calculator__fieldset">
+              <legend class="quote-calculator__legend">
+                <span class="quote-calculator__step-badge">Paso 01</span>
+                <span>Selecciona el Tipo de Solución</span>
+              </legend>
+              <div class="quote-calculator__types-grid" role="radiogroup" aria-label="Tipo de plataforma">
+                <!-- Tipo 1: Sistema Administrativo / POS -->
+                <label class="calc-type-card calc-type-card--selected" id="card-type-webapp">
+                  <input type="radio" name="calc-type" value="webapp" checked class="calc-type-card__radio">
+                  <div class="calc-type-card__content">
+                    <div class="calc-type-card__top">
+                      <span class="calc-type-card__icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                      </span>
+                      <span class="calc-type-card__badge">Más Demandado</span>
+                    </div>
+                    <strong class="calc-type-card__title">Sistema Administrativo & POS</strong>
+                    <p class="calc-type-card__desc">Facturación multimoneda ($ y Bs.), control de inventario, tasa BCV y caja.</p>
+                    <div class="calc-type-card__price-hint">Base promedio: <span class="calc-type-base" data-base-usd="650">$650 USD (≈ 572,000 Bs.)</span></div>
+                  </div>
+                </label>
+
+                <!-- Tipo 2: Tienda Online con WhatsApp -->
+                <label class="calc-type-card" id="card-type-ecommerce">
+                  <input type="radio" name="calc-type" value="ecommerce" class="calc-type-card__radio">
+                  <div class="calc-type-card__content">
+                    <div class="calc-type-card__top">
+                      <span class="calc-type-card__icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                      </span>
+                      <span class="calc-type-card__badge">Alta Conversión</span>
+                    </div>
+                    <strong class="calc-type-card__title">Tienda Online + WhatsApp</strong>
+                    <p class="calc-type-card__desc">Catálogo digital, pedidos directos a WhatsApp, Pago Móvil y Zelle.</p>
+                    <div class="calc-type-card__price-hint">Base promedio: <span class="calc-type-base" data-base-usd="360">$360 USD (≈ 316,800 Bs.)</span></div>
+                  </div>
+                </label>
+
+                <!-- Tipo 3: Página Web Corporativa & Landing Page -->
+                <label class="calc-type-card" id="card-type-landing">
+                  <input type="radio" name="calc-type" value="landing" class="calc-type-card__radio">
+                  <div class="calc-type-card__content">
+                    <div class="calc-type-card__top">
+                      <span class="calc-type-card__icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                      </span>
+                      <span class="calc-type-card__badge">Presencia Web</span>
+                    </div>
+                    <strong class="calc-type-card__title">Página Web & Landing Page</strong>
+                    <p class="calc-type-card__desc">Sitio profesional o One-Page de alta conversión para marcas, campañas y servicios.</p>
+                    <div class="calc-type-card__price-hint">Base promedio: <span class="calc-type-base" data-base-usd="180">$180 USD (≈ 158,400 Bs.)</span></div>
+                  </div>
+                </label>
+
+                <!-- Tipo 4: Software Empresarial a Medida -->
+                <label class="calc-type-card" id="card-type-software">
+                  <input type="radio" name="calc-type" value="software" class="calc-type-card__radio">
+                  <div class="calc-type-card__content">
+                    <div class="calc-type-card__top">
+                      <span class="calc-type-card__icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                      </span>
+                      <span class="calc-type-card__badge">Empresarial</span>
+                    </div>
+                    <strong class="calc-type-card__title">Software a Medida & SaaS</strong>
+                    <p class="calc-type-card__desc">Automatización de operaciones, múltiples sucursales, reportes y APIs.</p>
+                    <div class="calc-type-card__price-hint">Base promedio: <span class="calc-type-base" data-base-usd="1150">$1,150 USD (≈ 1,012,000 Bs.)</span></div>
+                  </div>
+                </label>
+
+                <!-- Tipo 5: App Móvil Nativa / Multiplataforma -->
+                <label class="calc-type-card" id="card-type-mobile">
+                  <input type="radio" name="calc-type" value="mobile" class="calc-type-card__radio">
+                  <div class="calc-type-card__content">
+                    <div class="calc-type-card__top">
+                      <span class="calc-type-card__icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                      </span>
+                      <span class="calc-type-card__badge">iOS & Android</span>
+                    </div>
+                    <strong class="calc-type-card__title">App Móvil para Clientes / Delivery</strong>
+                    <p class="calc-type-card__desc">App en Flutter / React Native para pedidos, catálogo y notificaciones push.</p>
+                    <div class="calc-type-card__price-hint">Base promedio: <span class="calc-type-base" data-base-usd="850">$850 USD (≈ 748,000 Bs.)</span></div>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Paso 2: Solicitudes y Requerimientos Clave en Venezuela -->
+            <fieldset class="quote-calculator__fieldset">
+              <legend class="quote-calculator__legend">
+                <span class="quote-calculator__step-badge">Paso 02</span>
+                <span>Solicitudes del Cliente & Requerimientos del Sistema</span>
+              </legend>
+
+              <!-- Barra de Filtro de Funciones por Tipo de Servicio -->
+              <div class="quote-calculator__module-filter-bar" id="calc-module-filter-bar">
+                <div class="quote-calculator__filter-status">
+                  <span>Funciones sugeridas para: <strong id="calc-current-service-name">Sistema Administrativo & POS</strong></span>
+                </div>
+                <div class="quote-calculator__filter-actions">
+                  <button type="button" class="quote-calculator__filter-btn quote-calculator__filter-btn--active" id="btn-filter-recommended" data-filter="recommended">
+                    Recomendadas
+                  </button>
+                  <button type="button" class="quote-calculator__filter-btn" id="btn-filter-all" data-filter="all">
+                    Ver Todas (12)
+                  </button>
+                </div>
+              </div>
+
+              <div class="quote-calculator__modules-grid">
+                <!-- Modulo 1: Pago Móvil & Pasarelas -->
+                <label class="calc-module-chip" data-services="webapp,ecommerce,mobile,software">
+                  <input type="checkbox" name="calc-modules" value="pagomovil" data-cost-usd="120" data-weeks="1" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Pago Móvil Automático & Pasarelas</strong>
+                      <span class="calc-module-chip__sub">Verificación C2P, Banesco, Zelle, Binance Pay y Zinli</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="120">+ $120 USD (≈ 105,600 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 2: Pedidos a WhatsApp -->
+                <label class="calc-module-chip" data-services="landing,ecommerce,mobile">
+                  <input type="checkbox" name="calc-modules" value="whatsapp_order" data-cost-usd="65" data-weeks="0.5" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Botón de Pedidos Directo a WhatsApp</strong>
+                      <span class="calc-module-chip__sub">Genera ticket con detalle del pedido, total en $ y Bs. y datos de entrega</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="65">+ $65 USD (≈ 57,200 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 3: Tasa BCV Diaria Automática -->
+                <label class="calc-module-chip" data-services="webapp,landing,ecommerce,software,mobile">
+                  <input type="checkbox" name="calc-modules" value="bcv_sync" data-cost-usd="50" data-weeks="0.5" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Sincronización Automática Tasa BCV</strong>
+                      <span class="calc-module-chip__sub">Actualización diaria de precios en Bolívares con el Banco Central</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="50">+ $50 USD (≈ 44,000 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 4: Inventario Multialmacén -->
+                <label class="calc-module-chip" data-services="webapp,ecommerce,software">
+                  <input type="checkbox" name="calc-modules" value="inventory" data-cost-usd="140" data-weeks="1" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Control de Inventario & Alertas de Stock</strong>
+                      <span class="calc-module-chip__sub">Entrada/salida de mercancía, kardex, stock mínimo y códigos de barra</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="140">+ $140 USD (≈ 123,200 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 5: Facturación & Reportes SENIAT -->
+                <label class="calc-module-chip" data-services="webapp,software">
+                  <input type="checkbox" name="calc-modules" value="seniat" data-cost-usd="160" data-weeks="1" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Facturación & Reportes Contables</strong>
+                      <span class="calc-module-chip__sub">Control de facturas, notas de entrega, libro de ventas y cálculo de IGTF/IVA</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="160">+ $160 USD (≈ 140,800 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 6: Roles y Permisos -->
+                <label class="calc-module-chip" data-services="webapp,software,mobile">
+                  <input type="checkbox" name="calc-modules" value="roles" data-cost-usd="85" data-weeks="0.5" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Roles y Permisos de Usuarios</strong>
+                      <span class="calc-module-chip__sub">Acceso diferenciado para cajeros, vendedores, supervisor y administrador</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="85">+ $85 USD (≈ 74,800 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 7: Módulo de Delivery & Envíos -->
+                <label class="calc-module-chip" data-services="ecommerce,webapp,mobile">
+                  <input type="checkbox" name="calc-modules" value="delivery" data-cost-usd="110" data-weeks="1" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Módulo de Delivery & Zonas de Envío</strong>
+                      <span class="calc-module-chip__sub">Tarifas por zonas de delivery local e integración con MRW, Zoom y Tealca</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="110">+ $110 USD (≈ 96,800 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 8: Dominio + Hosting + Correos -->
+                <label class="calc-module-chip" data-services="landing,ecommerce,software">
+                  <input type="checkbox" name="calc-modules" value="hosting" data-cost-usd="60" data-weeks="0.5" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Dominio (.com/.com.ve) + Hosting (1er Año)</strong>
+                      <span class="calc-module-chip__sub">Certificado de seguridad SSL y correos corporativos configurados</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="60">+ $60 USD (≈ 52,800 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 9: Notificaciones Automáticas -->
+                <label class="calc-module-chip" data-services="landing,ecommerce,software,mobile">
+                  <input type="checkbox" name="calc-modules" value="notifications" data-cost-usd="75" data-weeks="0.5" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Notificaciones Automáticas WhatsApp / SMS</strong>
+                      <span class="calc-module-chip__sub">Avisos automáticos de estado del pedido o confirmación de pago</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="75">+ $75 USD (≈ 66,000 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 10: Estadísticas de Ganancias en Vivo -->
+                <label class="calc-module-chip" data-services="landing,ecommerce,webapp,software,mobile">
+                  <input type="checkbox" name="calc-modules" value="analytics" data-cost-usd="95" data-weeks="0.5" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Dashboard de Ganancias & Métricas</strong>
+                      <span class="calc-module-chip__sub">Gráficos de ventas diarias, productos estrella y arqueo de caja en vivo</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="95">+ $95 USD (≈ 83,600 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 11: Modo Offline Resiliente -->
+                <label class="calc-module-chip" data-services="webapp,mobile,software">
+                  <input type="checkbox" name="calc-modules" value="offline" data-cost-usd="115" data-weeks="1" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Modo Offline (Cortes de Internet/Luz)</strong>
+                      <span class="calc-module-chip__sub">Sigue facturando sin conexión y sincroniza en la nube al volver la señal</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="115">+ $115 USD (≈ 101,200 Bs.)</span>
+                  </span>
+                </label>
+
+                <!-- Modulo 12: Impresoras Térmicas POS -->
+                <label class="calc-module-chip" data-services="webapp">
+                  <input type="checkbox" name="calc-modules" value="thermal_print" data-cost-usd="70" data-weeks="0.5" class="calc-module-chip__checkbox">
+                  <span class="calc-module-chip__box">
+                    <span class="calc-module-chip__check-icon" aria-hidden="true">&#10003;</span>
+                    <span class="calc-module-chip__info">
+                      <strong class="calc-module-chip__name">Impresoras Térmicas de Tickets (58mm/80mm)</strong>
+                      <span class="calc-module-chip__sub">Impresión inmediata de recibos de venta, comandas y presupuestos</span>
+                    </span>
+                    <span class="calc-module-chip__cost" data-cost-usd="70">+ $70 USD (≈ 61,600 Bs.)</span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Paso 3: Ritmo de Entrega -->
+            <fieldset class="quote-calculator__fieldset">
+              <legend class="quote-calculator__legend">
+                <span class="quote-calculator__step-badge">Paso 03</span>
+                <span>Ritmo y Prioridad de Entrega</span>
+              </legend>
+              <div class="quote-calculator__speed-grid" role="radiogroup" aria-label="Ritmo de desarrollo">
+                <label class="calc-speed-card calc-speed-card--selected" id="card-speed-standard">
+                  <input type="radio" name="calc-speed" value="standard" checked data-multiplier="1.0" class="calc-speed-card__radio">
+                  <div class="calc-speed-card__content">
+                    <strong class="calc-speed-card__title">Ritmo Estándar (Recomendado)</strong>
+                    <span class="calc-speed-card__desc">Entrega organizada por fases y pruebas de calidad completas.</span>
+                    <span class="calc-speed-card__tag">Sin Recargo (1.0x)</span>
+                  </div>
+                </label>
+
+                <label class="calc-speed-card" id="card-speed-priority">
+                  <input type="radio" name="calc-speed" value="priority" data-multiplier="1.15" class="calc-speed-card__radio">
+                  <div class="calc-speed-card__content">
+                    <strong class="calc-speed-card__title">Prioridad Acelerada</strong>
+                    <span class="calc-speed-card__desc">Equipo reforzado, acorta el tiempo de entrega en ~25%.</span>
+                    <span class="calc-speed-card__tag">+15% Inversión</span>
+                  </div>
+                </label>
+
+                <label class="calc-speed-card" id="card-speed-express">
+                  <input type="radio" name="calc-speed" value="express" data-multiplier="1.25" class="calc-speed-card__radio">
+                  <div class="calc-speed-card__content">
+                    <strong class="calc-speed-card__title">Sprint Urgente Express</strong>
+                    <span class="calc-speed-card__desc">Dedicación exclusiva intensiva para lanzamientos comerciales inmediatos.</span>
+                    <span class="calc-speed-card__tag">+25% Inversión</span>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <!-- Columna Derecha: Tarjeta Fija de Estimación en Tiempo Real -->
+          <aside class="quote-calculator__sidebar" aria-label="Resumen de presupuesto interactivo">
+            <div class="quote-summary-card">
+              <div class="quote-summary-card__header">
+                <span class="quote-summary-card__live-pill">
+                  <span class="quote-summary-card__live-dot" aria-hidden="true"></span>
+                  Cálculo en Vivo &bull; Venezuela
+                </span>
+                <h3 class="quote-summary-card__title">Presupuesto del Proyecto</h3>
+              </div>
+
+              <!-- Rango de Precio Estimado Dual (Dólares y Bolívares) -->
+              <div class="quote-summary-card__price-panel">
+                <span class="quote-summary-card__price-caption">Inversión Total Estimada:</span>
+                
+                <div class="quote-summary-card__price-row quote-summary-card__price-row--usd" id="calc-usd-row">
+                  <span class="quote-summary-card__currency-tag">USD</span>
+                  <div class="quote-summary-card__price-main">
+                    <span class="quote-summary-card__currency-symbol">$</span>
+                    <span class="quote-summary-card__price-number" id="calc-price-usd">980 – 1,180</span>
+                    <span class="quote-summary-card__currency-code">USD</span>
+                  </div>
+                </div>
+
+                <div class="quote-summary-card__price-row quote-summary-card__price-row--ves" id="calc-ves-row">
+                  <span class="quote-summary-card__currency-tag quote-summary-card__currency-tag--ves">VES</span>
+                  <div class="quote-summary-card__price-main quote-summary-card__price-main--ves">
+                    <span class="quote-summary-card__currency-symbol">Bs.</span>
+                    <span class="quote-summary-card__price-number" id="calc-price-ves">863,449 – 1,039,663</span>
+                    <span class="quote-summary-card__currency-code">Bs.</span>
+                  </div>
+                </div>
+
+                <span class="quote-summary-card__price-note" id="calc-rate-applied-note">Calculado a tasa oficial BCV de 881.07 Bs./$</span>
+              </div>
+
+              <!-- Desglose de Porcentajes de Pago por Hitos -->
+              <div class="quote-summary-card__milestones-box">
+                <div class="milestones-header">
+                  <span class="milestones-title">Cronograma de Pagos por Hitos:</span>
+                  <div class="milestones-tabs" role="tablist">
+                    <button type="button" class="milestone-tab milestone-tab--active" data-scheme="3-steps" title="50% Inicial / 30% Avance / 20% Entrega">
+                      50/30/20
+                    </button>
+                    <button type="button" class="milestone-tab" data-scheme="2-steps" title="50% Inicial / 50% Entrega">
+                      50/50
+                    </button>
+                    <button type="button" class="milestone-tab" data-scheme="full" title="Pago Completo con 5% de Descuento">
+                      Contado (-5%)
+                    </button>
+                  </div>
+                </div>
+
+                <div class="milestones-list" id="calc-milestones-list">
+                  <!-- Se genera dinámicamente con JavaScript -->
+                </div>
+              </div>
+
+              <!-- Métricas del Proyecto -->
+              <div class="quote-summary-card__metrics">
+                <div class="quote-summary-card__metric-row">
+                  <span class="quote-summary-card__metric-label">Plazo de Desarrollo:</span>
+                  <strong class="quote-summary-card__metric-value" id="calc-timeline-text">3 - 4 Semanas</strong>
+                </div>
+                <div class="quote-summary-card__metric-row">
+                  <span class="quote-summary-card__metric-label">Equipo Asignado:</span>
+                  <strong class="quote-summary-card__metric-value" id="calc-squad-text">1 Fullstack + 1 DB Arch</strong>
+                </div>
+                <div class="quote-summary-card__metric-row">
+                  <span class="quote-summary-card__metric-label">Módulos Seleccionados:</span>
+                  <strong class="quote-summary-card__metric-value" id="calc-modules-count">4 requerimientos</strong>
+                </div>
+              </div>
+
+              <div class="quote-summary-card__active-tags" id="calc-active-tags-container">
+                <!-- Se actualiza con JS -->
+              </div>
+
+              <!-- Acciones de Conversión -->
+              <div class="quote-summary-card__actions">
+                <button type="button" class="quote-summary-card__btn-direct" id="btn-direct-dispatch-quote">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Enviar Presupuesto por WhatsApp / Correo</span>
+                </button>
+
+                <button type="button" class="quote-summary-card__btn-transfer" id="btn-transfer-quote">
+                  <span>Transferir al Formulario de Contacto</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+                <button type="button" class="quote-summary-card__btn-print" id="btn-print-quote">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  <span>Imprimir / Guardar Presupuesto</span>
+                </button>
+              </div>
+
+              <div class="quote-summary-card__security">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>Aceptamos Pago Móvil, Transferencias Banesco, Mercantil, Zelle, Binance Pay y Tarjetas Internacionales.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand-col">
+          <a href="index.html" class="footer__brand" aria-label="Cyberion - Volver arriba">
+            <span class="footer__logo-icon" aria-hidden="true">
+              <img src="icono.png" alt="Cyberion Logo" class="footer__logo-img" width="32" height="32">
+            </span>
+            <span class="footer__logo-text">CYBERION<span class="footer__logo-dot">.</span></span>
+          </a>
+          <p class="footer__tagline">
+            Ingeniería de software de vanguardia, sistemas distribuidos de baja latencia y experiencias web creadas para dominar industrias competitivas en Venezuela y América Latina.
+          </p>
+          <div class="footer__system-status" role="status">
+            <span class="footer__status-indicator" aria-hidden="true"></span>
+            <span class="footer__status-text">Todos los sistemas operativos &middot; 99.99% Cloud SLA</span>
+          </div>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Navegación</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="index.html" class="footer__link">Inicio</a></li>
+            <li class="footer__item"><a href="empresa.html" class="footer__link">Empresa</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Soluciones</a></li>
+            <li class="footer__item"><a href="cotizador.html" class="footer__link">Cotizador en Vivo</a></li>
+            <li class="footer__item"><a href="portafolio.html" class="footer__link">Casos de Éxito</a></li>
+            <li class="footer__item"><a href="contacto.html" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Especialidades</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Puntos de Venta (POS) & Facturación</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">E-Commerce WhatsApp Automatizado</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Plataformas Web Corporativas B2B</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">SaaS & Sistemas Administrativos</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Apps Móviles Nativas e Híbridas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Ecosistema</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>GitHub Enterprise</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>LinkedIn Corporate</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20tengo%20una%20consulta%20sobre%20el%20presupuesto%20del%20cotizador" target="_blank" rel="noopener noreferrer" class="footer__link">
+                <span>Atención WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          &copy; <span id="current-year">2026</span> Cyberion Technologies LLC. Todos los derechos reservados.
+        </div>
+        <div class="footer__legal">
+          <a href="#privacy" class="footer__legal-link">Aviso de Privacidad</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#terms" class="footer__legal-link">Términos de Servicio</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#security" class="footer__legal-link">Protocolos de Seguridad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de Acción Rápida (WhatsApp) -->
+  <div class="floating-quick-actions" aria-label="Acciones rápidas de contacto">
+    <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20tengo%20una%20consulta%20sobre%20el%20presupuesto%20del%20cotizador" class="floating-action-btn floating-action-btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <span class="floating-action-btn__icon" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.072 6.223-1.633c1.7 1 3.7 1.633 5.877 1.633 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- MODAL DE DESPACHO DIRECTO (GMAIL, CORREO, WHATSAPP & CLIPBOARD) -->
+  <div class="dispatch-modal" id="dispatch-modal" role="dialog" aria-modal="true" aria-labelledby="dispatch-modal-title" hidden>
+    <div class="dispatch-modal__backdrop" id="dispatch-modal-backdrop"></div>
+    <div class="dispatch-modal__dialog">
+      <div class="dispatch-modal__card">
+        <div class="dispatch-modal__header">
+          <div class="dispatch-modal__badge">
+            <span class="dispatch-modal__badge-dot" aria-hidden="true"></span>
+            <span>Despacho Directo &bull; eduardojhp12@gmail.com</span>
+          </div>
+          <button type="button" class="dispatch-modal__close-btn" id="dispatch-modal-close" aria-label="Cerrar ventana">
+            &times;
+          </button>
+        </div>
+
+        <div class="dispatch-modal__body">
+          <div class="dispatch-modal__icon-wrap" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+
+          <h3 class="dispatch-modal__title" id="dispatch-modal-title">¡Presupuesto Listo para Despacho!</h3>
+          <p class="dispatch-modal__subtitle" id="dispatch-modal-subtitle">
+            Tu cotización calculada en vivo está lista. Elige tu canal preferido para enviarla directamente a nuestro equipo técnico:
+          </p>
+
+          <!-- Resumen de Datos Dinámico -->
+          <div class="dispatch-modal__summary-box" id="dispatch-modal-summary">
+            <!-- Se completa dinámicamente con JS -->
+          </div>
+
+          <!-- Mensaje de Estado / Guía -->
+          <div class="dispatch-modal__channel-notice" id="dispatch-modal-status-note">
+            <!-- Se completa dinámicamente con JS -->
+          </div>
+
+          <!-- Acciones Directas de Alto Impacto -->
+          <div class="dispatch-modal__actions">
+            <a href="#" class="dispatch-modal__btn dispatch-modal__btn--gmail" id="dispatch-btn-gmail" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>✉️ Abrir en Gmail (Envío Directo)</span>
+            </a>
+
+            <a href="#" class="dispatch-modal__btn dispatch-modal__btn--whatsapp" id="dispatch-btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>💬 Enviar por WhatsApp Oficial</span>
+            </a>
+
+            <button type="button" class="dispatch-modal__btn dispatch-modal__btn--copy" id="dispatch-btn-copy">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="dispatch-copy-text">📋 Copiar Resumen Técnico</span>
+            </button>
+
+            <a href="#" class="dispatch-modal__link-mailto" id="dispatch-link-mailto">
+              O enviar usando tu cliente de correo (Outlook, Apple Mail, Thunderbird) &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

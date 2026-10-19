@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <!-- SEO & Metadatos Corporativos (Venezuela & Latam) -->
+  <title>Cyberion | Desarrollo de Software, Páginas Web & Sistemas en Venezuela</title>
+  <meta name="description" content="Desarrollo de software a medida, páginas web profesionales, tiendas online con WhatsApp y sistemas administrativos en Venezuela. Cotización instantánea en Dólares ($) y Bolívares (Bs.).">
+  <meta name="keywords" content="desarrollo de software venezuela, paginas web caracas, sistemas administrativos venezuela, pago movil c2p, tiendas online whatsapp, desarrolladores venezuela, software a medida">
+  <meta name="author" content="Cyberion Engineering Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F8FAFC">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cyberion Venezuela">
+  <meta property="og:title" content="Cyberion | Desarrollo de Software & Páginas Web en Venezuela">
+  <meta property="og:description" content="Impulsamos empresas y negocios en Venezuela con plataformas web de alto rendimiento, cotizaciones en Dólares ($) y Bolívares (Bs.).">
+  <meta property="og:url" content="https://cyberion.tech/">
+  <meta property="og:image" content="icono.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cyberion | Ingeniería de Software & Web B2B">
+  <meta name="twitter:description" content="Desarrollo Web Full-Stack, E-Commerce de Alta Conversión y Sistemas Críticos a Medida.">
+  <meta name="twitter:image" content="icono.png">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Oficial Circuit Emblem -->
+  <link rel="icon" type="image/jpeg" href="icono.png">
+  <link rel="icon" type="image/png" href="icono.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icono.png">
+</head>
+<body class="site-body">
+  <!-- Salto de accesibilidad para lectores de pantalla -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- =========================================================================
+       1. NAVBAR PRINCIPAL (header.navbar)
+       ========================================================================= -->
+  <header class="navbar" id="site-header" role="banner">
+    <div class="navbar__container">
+      <!-- Logotipo & Isotipo Corporativo -->
+      <a href="index.html" class="navbar__brand" aria-label="Cyberion - Página de Inicio">
+        <span class="navbar__logo-icon" aria-hidden="true">
+          <img src="icono.png" alt="Cyberion Logo" class="navbar__logo-img" width="34" height="34">
+        </span>
+        <span class="navbar__logo-text">CYBERION<span class="navbar__logo-dot">.</span></span>
+      </a>
+
+      <!-- Menú de Navegación Principal Multi-Página -->
+      <nav class="navbar__nav" id="primary-navigation" role="navigation" aria-label="Navegación principal">
+        <ul class="navbar__menu" role="menubar">
+          <li class="navbar__item" role="none">
+            <a href="index.html" class="navbar__link navbar__link--active" role="menuitem" data-nav-link>Inicio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="empresa.html" class="navbar__link" role="menuitem" data-nav-link>Empresa</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="servicios.html" class="navbar__link" role="menuitem" data-nav-link>Soluciones</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="cotizador.html" class="navbar__link" role="menuitem" data-nav-link>Cotizador</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="portafolio.html" class="navbar__link" role="menuitem" data-nav-link>Portafolio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="contacto.html" class="navbar__link" role="menuitem" data-nav-link>Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Acciones / CTA, Selector de Tema y Botón Móvil -->
+      <div class="navbar__actions">
+        <!-- Selector Modo Claro / Modo Oscuro (Solo iconos Sol / Luna) -->
+        <button type="button" class="navbar__theme-btn" id="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">
+          <span class="navbar__theme-icon-box" aria-hidden="true">
+            <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <a href="cotizador.html" class="navbar__cta-btn" id="navbar-cta-quote">
+          <span class="navbar__cta-text">Cotizador en Vivo</span>
+          <svg class="navbar__cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Botón Toggle Menú Móvil -->
+        <button type="button" class="navbar__toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú de navegación">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       CONTENIDO PRINCIPAL
+       ========================================================================= -->
+  <main id="main-content" class="main-content">
+
+    <!-- =======================================================================
+         1. HERO SECTION (section.hero con Video de Fondo)
+         ======================================================================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- Video de Fondo de Pantalla Corporativo -->
+      <div class="hero__video-container" aria-hidden="true">
+        <video class="hero__bg-video" id="hero-bg-video" autoplay muted loop playsinline preload="auto">
+          <source src="gemini_generated_video_fbc49a21.mp4" type="video/mp4">
+        </video>
+        <div class="hero__video-overlay"></div>
+      </div>
+
+      <!-- Elementos Decorativos de Fondo -->
+      <div class="hero__glow hero__glow--primary" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--secondary" aria-hidden="true"></div>
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+      <div class="hero__container">
+        <div class="hero__content">
+          <!-- Top Row: Badge de Disponibilidad -->
+          <div class="hero__meta-row">
+            <div class="hero__badge" role="status">
+              <span class="hero__badge-pulse" aria-hidden="true"></span>
+              <span class="hero__badge-text">Ingeniería de Software &bull; Soluciones en Venezuela &bull; Precios en $ y Bs.</span>
+            </div>
+
+            <!-- Botón Discreto de Control del Video -->
+            <button type="button" class="hero__video-toggle-btn" id="btn-toggle-video" aria-label="Pausar video de fondo" title="Pausar o reanudar video de fondo">
+              <span class="hero__video-toggle-dot"></span>
+              <span class="hero__video-toggle-text" id="video-status-text">Video</span>
+              <span class="hero__video-toggle-icon" aria-hidden="true">
+                <svg class="icon-pause" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"></rect><rect x="14" y="4" width="4" height="16" rx="1"></rect></svg>
+                <svg class="icon-play" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" hidden><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- Título Principal de Alto Impacto -->
+          <h1 class="hero__title" id="hero-title">
+            Desarrollo de Software & Web <span class="hero__title-gradient">en Venezuela</span>
+          </h1>
+
+          <!-- Subtítulo Estratégico -->
+          <p class="hero__subtitle">
+            Creamos páginas web profesionales, tiendas online con WhatsApp, sistemas administrativos POS multimoneda ($ / Bs.) y software a medida adaptados a la realidad comercial de Venezuela con soporte técnico local garantizado.
+          </p>
+
+          <!-- Tasa referencial oficial destacada en Hero -->
+          <div class="hero__rate-banner" id="hero-rate-banner">
+            <span class="hero__rate-badge">
+              <span class="bcv-rate-dot" aria-hidden="true"></span>
+              BCV Oficial en Vivo
+            </span>
+            <span class="hero__rate-text">1 USD = <strong id="hero-rate-val">881.07</strong> Bs. &bull; 1 EUR = <strong id="hero-rate-eur">991.16</strong> Bs. &bull; Cobros en Pago Móvil, Zelle y Binance</span>
+          </div>
+
+          <!-- Triple CTA Estratégico -->
+          <div class="hero__cta-group">
+            <a href="cotizador.html" class="hero__btn hero__btn--primary" id="hero-cta-quote">
+              <span>Cotizador en Dólares & Bolívares</span>
+              <svg class="hero__btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="servicios.html" class="hero__btn hero__btn--secondary" id="hero-cta-services">
+              <span>Nuestras Soluciones</span>
+              <svg class="hero__btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20deseo%20asesor%C3%ADa%20sobre%20desarrollo%20de%20software" class="hero__btn hero__btn--whatsapp" id="hero-cta-whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.072 6.223-1.633c1.7 1 3.7 1.633 5.877 1.633 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+
+          <!-- Métricas Clave de Confianza B2B -->
+          <div class="hero__metrics" role="region" aria-label="Métricas corporativas">
+            <div class="hero__metric-card">
+              <div class="hero__metric-number-wrapper">
+                <span class="hero__metric-value" data-count="120">120</span>
+                <span class="hero__metric-unit">+</span>
+              </div>
+              <span class="hero__metric-label">Proyectos Desplegados</span>
+              <span class="hero__metric-desc">En entornos enterprise y pymes de Venezuela</span>
+            </div>
+
+            <div class="hero__metric-card">
+              <div class="hero__metric-number-wrapper">
+                <span class="hero__metric-value" data-count="99.98">99.98</span>
+                <span class="hero__metric-unit">%</span>
+              </div>
+              <span class="hero__metric-label">Uptime Garantizado</span>
+              <span class="hero__metric-desc">Arquitecturas serverless tolerantes a cortes de red</span>
+            </div>
+
+            <div class="hero__metric-card">
+              <div class="hero__metric-number-wrapper">
+                <span class="hero__metric-value" data-count="99">99</span>
+                <span class="hero__metric-unit">/100</span>
+              </div>
+              <span class="hero__metric-label">Rendimiento Lighthouse</span>
+              <span class="hero__metric-desc">Core Web Vitals optimizados al milisegundo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. PREVIEW DE EMPRESA / IDENTIDAD
+         ======================================================================= -->
+    <section class="about" style="padding: var(--space-3xl) 0 var(--space-2xl);" aria-labelledby="home-about-title">
+      <div class="about__container">
+        <header class="about__header">
+          <span class="about__eyebrow">Sobre Cyberion Engineering</span>
+          <h2 class="about__title" id="home-about-title">Ingeniería de Software con Estándares Globales</h2>
+          <p class="about__description">
+            Cyberion nació para resolver la brecha entre la visión estratégica de negocio y la ejecución técnica impecable. Creamos infraestructuras cloud resilientes, aplicaciones de baja latencia y software propietario de clase mundial.
+          </p>
+        </header>
+
+        <div class="about__overview-grid" style="margin-bottom: var(--space-2xl);">
+          <div class="about__overview-main">
+            <h3 class="about__panel-heading">Impulsando plataformas digitales y sistemas comerciales en Venezuela</h3>
+            <p class="about__panel-p">
+              En <strong>Cyberion</strong> desarrollamos páginas web profesionales, tiendas online con WhatsApp y sistemas administrativos a medida para comercios, empresas e industrias en Venezuela. Resolvemos los desafíos reales del país: sincronización con la tasa oficial BCV, cobros por Pago Móvil, Zelle y Binance Pay, y funcionamiento continuo incluso ante contingencias de red.
+            </p>
+
+            <div class="about__highlights-row">
+              <div class="about__highlight-card">
+                <span class="about__highlight-num">100%</span>
+                <span class="about__highlight-text">Código Propietario del Cliente (Sin Lock-in)</span>
+              </div>
+              <div class="about__highlight-card">
+                <span class="about__highlight-num">&lt; 4h</span>
+                <span class="about__highlight-text">SLA de Respuesta Técnica y Asistencia Crítica</span>
+              </div>
+              <div class="about__highlight-card">
+                <span class="about__highlight-num">90 Días</span>
+                <span class="about__highlight-text">Garantía Total de Estabilidad Post-Lanzamiento</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__overview-side">
+            <div class="about__mission-card">
+              <div class="about__mission-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </div>
+              <h4 class="about__mission-title">Nuestra Misión</h4>
+              <p class="about__mission-desc">
+                Entregar ingeniería de software de élite que elimine el riesgo operativo y permita a las empresas escalar con confianza, agilidad y rendimiento récord.
+              </p>
+            </div>
+
+            <div class="about__mission-card about__mission-card--violet">
+              <div class="about__mission-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="M12 2v20"/></svg>
+              </div>
+              <h4 class="about__mission-title">Nuestra Visión</h4>
+              <p class="about__mission-desc">
+                Ser la firma de referencia tecnológica para fundadores y corporativos que requieren soluciones no convencionales, escalables y tolerantes a fallos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-section-cta">
+          <a href="empresa.html" class="hero__btn hero__btn--secondary">
+            <span>Conoce más sobre nuestra empresa, principios y stack tecnológico</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. PREVIEW DE SOLUCIONES Y SERVICIOS
+         ======================================================================= -->
+    <section class="services" style="padding: var(--space-2xl) 0;" aria-labelledby="home-services-title">
+      <div class="services__container">
+        <header class="services__header">
+          <span class="services__eyebrow">Capacidades de Vanguardia</span>
+          <h2 class="services__title" id="home-services-title">Soluciones de Ingeniería Especializada</h2>
+          <p class="services__description">
+            Combinamos rigor matemático, arquitectura de sistemas distribuida y diseño centrado en el usuario para concebir productos digitales invulnerables y de alto desempeño.
+          </p>
+        </header>
+
+        <div class="services__grid">
+          <!-- Card 1: Desarrollo Web Full-Stack -->
+          <article class="service-card" data-service="fullstack">
+            <div class="service-card__top">
+              <div class="service-card__icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <span class="service-card__tag">High-Throughput</span>
+            </div>
+            <h3 class="service-card__title service-card__title--highlighted">Desarrollo Web Full-Stack</h3>
+            <p class="service-card__text">
+              Aplicaciones de una sola página (SPA) y arquitecturas isomórficas con backend resiliente, APIs GraphQL/RESTful y streaming en tiempo real.
+            </p>
+            <div class="service-card__footer">
+              <a href="servicios.html" class="service-card__link">
+                <span>Ver Detalles</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Landing Pages de Alta Conversión -->
+          <article class="service-card" data-service="landing">
+            <div class="service-card__top">
+              <div class="service-card__icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <span class="service-card__tag">Ultra Conversión & WhatsApp</span>
+            </div>
+            <h3 class="service-card__title">Landing Pages de Alta Conversión</h3>
+            <p class="service-card__text">
+              Páginas de aterrizaje One-Page optimizadas para captación de clientes en Meta Ads, Google Ads y TikTok con canalización directa a WhatsApp.
+            </p>
+            <div class="service-card__footer">
+              <a href="servicios.html" class="service-card__link">
+                <span>Ver Detalles</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: E-Commerce + WhatsApp -->
+          <article class="service-card" data-service="ecommerce">
+            <div class="service-card__top">
+              <div class="service-card__icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </div>
+              <span class="service-card__tag">WhatsApp & Pagos Locales</span>
+            </div>
+            <h3 class="service-card__title">E-Commerce de Alta Conversión</h3>
+            <p class="service-card__text">
+              Tiendas online optimizadas para Venezuela con catálogo digital, checkout automatizado a WhatsApp y cobros en $ y Bolívares.
+            </p>
+            <div class="service-card__footer">
+              <a href="servicios.html" class="service-card__link">
+                <span>Ver Detalles</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: POS Multimoneda -->
+          <article class="service-card" data-service="pos">
+            <div class="service-card__top">
+              <div class="service-card__icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span class="service-card__tag">Offline-First & Fiscal</span>
+            </div>
+            <h3 class="service-card__title">Puntos de Venta (POS) & Facturación</h3>
+            <p class="service-card__text">
+              Sistemas de caja rápida multimoneda con soporte de impresora térmica, libro de ventas SENIAT y funcionamiento offline ininterrumpido.
+            </p>
+            <div class="service-card__footer">
+              <a href="servicios.html" class="service-card__link">
+                <span>Ver Detalles</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Sistemas a Medida -->
+          <article class="service-card" data-service="architecture">
+            <div class="service-card__top">
+              <div class="service-card__icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <span class="service-card__tag">Cloud Enterprise</span>
+            </div>
+            <h3 class="service-card__title">Arquitectura & Sistemas a Medida</h3>
+            <p class="service-card__text">
+              Plataformas SaaS de misión crítica, control administrativo empresarial, gestión de sucursales y APIs de alta disponibilidad.
+            </p>
+            <div class="service-card__footer">
+              <a href="servicios.html" class="service-card__link">
+                <span>Ver Detalles</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="home-section-cta">
+          <a href="servicios.html" class="hero__btn hero__btn--secondary">
+            <span>Explorar Todas las Soluciones & Metodología de Trabajo</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. BANNER DESTACADO DEL COTIZADOR INTERACTIVO
+         ======================================================================= -->
+    <section class="home-quote-section" aria-labelledby="home-quote-banner-title">
+      <div class="quote-calculator__container">
+        <div class="home-quote-card">
+          <div class="home-quote-card__glow" aria-hidden="true"></div>
+          <div class="home-quote-card__content">
+            <span class="home-quote-card__badge">
+              Simulador en Tiempo Real &bull; Precios Oficiales 2026
+            </span>
+            <h2 class="home-quote-card__title" id="home-quote-banner-title">
+              ¿Cuánto cuesta desarrollar tu proyecto en Venezuela?
+            </h2>
+            <p class="home-quote-card__desc">
+              Olvídate de presupuestos ambiguos o sorpresas. Utiliza nuestro cotizador interactivo con precios reales del mercado, soporte en <strong>Dólares ($ USD)</strong> y en <strong>Bolívares (Bs. VES)</strong> con cálculo automático a tasa oficial BCV y desglose de pagos por hitos (50/30/20).
+            </p>
+
+            <div class="home-quote-card__features">
+              <div class="home-quote-feature">
+                <span class="home-quote-feature__icon">&#10003;</span>
+                <span>Tasa oficial BCV sincronizada en vivo</span>
+              </div>
+              <div class="home-quote-feature">
+                <span class="home-quote-feature__icon">&#10003;</span>
+                <span>Desglose por hitos de entrega (50/30/20 o 50/50)</span>
+              </div>
+              <div class="home-quote-feature">
+                <span class="home-quote-feature__icon">&#10003;</span>
+                <span>Despacho directo por WhatsApp o Correo</span>
+              </div>
+            </div>
+
+            <div class="home-quote-card__actions">
+              <a href="cotizador.html" class="hero__btn hero__btn--primary">
+                <span>Abrir Cotizador en Vivo</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="contacto.html" class="hero__btn hero__btn--secondary">
+                <span>Solicitar Asesoría Personalizada</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. PREVIEW DE CASOS DE ÉXITO / PORTAFOLIO
+         ======================================================================= -->
+    <section class="portfolio" style="padding: var(--space-3xl) 0 var(--space-2xl);" aria-labelledby="home-portfolio-title">
+      <div class="portfolio__container">
+        <header class="portfolio__header">
+          <span class="portfolio__eyebrow">Casos de Éxito Validados</span>
+          <h2 class="portfolio__title" id="home-portfolio-title">Ingeniería Aplicada en Producción</h2>
+          <p class="portfolio__description">
+            Examinamos el impacto tangible de nuestras soluciones en entornos de alta demanda. Cada proyecto refleja estándares exigentes de latencia, seguridad y retorno de inversión.
+          </p>
+        </header>
+
+        <div class="portfolio__grid">
+          <!-- Proyecto 1 -->
+          <article class="portfolio-card" data-category="webapps">
+            <div class="portfolio-card__media">
+              <img src="assets/project-fintech.jpg" alt="Plataforma de Trading y Análisis en Tiempo Real" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Realtime Analytics &middot; WebSockets</div>
+              </div>
+              <span class="portfolio-card__badge">Web App</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Apex Financial Markets</div>
+              <h3 class="portfolio-card__title">Plataforma de Trading y Análisis en Tiempo Real</h3>
+              <p class="portfolio-card__summary">
+                Dashboard analítico para procesamiento masivo de datos con visualizaciones interactivas y retardo menor a 20ms.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">&lt; 18ms</span>
+                  <span class="portfolio-card__metric-key">Latencia P99</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">+340%</span>
+                  <span class="portfolio-card__metric-key">Volumen Operativo</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="portfolio-card" data-category="ecommerce">
+            <div class="portfolio-card__media">
+              <img src="assets/project-ecommerce.jpg" alt="E-Commerce Headless Global con Checkout Instantáneo" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Headless Commerce &middot; Multi-Region</div>
+              </div>
+              <span class="portfolio-card__badge">E-Commerce</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Aura Luxury Goods</div>
+              <h3 class="portfolio-card__title">E-Commerce Headless Global con Checkout Instantáneo</h3>
+              <p class="portfolio-card__summary">
+                Migración completa a arquitectura desacoplada con soporte multimoneda y tiempo de carga inferior a 600ms.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">+42%</span>
+                  <span class="portfolio-card__metric-key">Tasa Conversión</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">0.58s</span>
+                  <span class="portfolio-card__metric-key">First Contentful Paint</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="portfolio-card" data-category="systems">
+            <div class="portfolio-card__media">
+              <img src="assets/project-logistics.jpg" alt="Motor Distribuido de Telemetría y Despacho" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Distributed Mesh &middot; IoT Fleet</div>
+              </div>
+              <span class="portfolio-card__badge">Sistemas</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Vanguard Logistics Corp</div>
+              <h3 class="portfolio-card__title">Motor Distribuido de Telemetría y Despacho</h3>
+              <p class="portfolio-card__summary">
+                Malla de microservicios para tracking en vivo de 15,000 unidades con tolerancia a fallos de red.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">99.999%</span>
+                  <span class="portfolio-card__metric-key">Disponibilidad</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">-65%</span>
+                  <span class="portfolio-card__metric-key">Costo Cloud Server</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="home-section-cta">
+          <a href="portafolio.html" class="hero__btn hero__btn--secondary">
+            <span>Ver Portafolio Completo con Fichas Técnicas & Métricas</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. TESTIMONIOS Y REPUTACIÓN B2B
+         ======================================================================= -->
+    <section class="testimonials" style="padding: var(--space-2xl) 0;" aria-labelledby="home-testimonials-title">
+      <div class="testimonials__container">
+        <header class="testimonials__header">
+          <span class="testimonials__eyebrow">Confianza de Líderes Tecnológicos</span>
+          <h2 class="testimonials__title" id="home-testimonials-title">Respaldados por Equipos de Alta Exigencia</h2>
+          <p class="testimonials__description">
+            Directores de Tecnología, Product Leaders y Fundadores que confiaron en Cyberion para modernizar su infraestructura y acelerar su ciclo de innovación.
+          </p>
+        </header>
+
+        <div class="testimonials__grid">
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="testimonial-card__tag">Fintech & High-Frequency</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              &ldquo;Cyberion redujo la latencia de nuestro motor de streaming a menos de 18ms. Nuestro volumen transaccional creció 3.4x sin un solo incidente de infraestructura.&rdquo;
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">AM</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Alejandro Morales</strong>
+                <span class="testimonial-card__role">Chief Technology Officer &bull; Apex Financial</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="testimonial-card__tag">E-Commerce Global</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              &ldquo;Nuestra tasa de conversión móvil aumentó un +42% en el primer mes tras el lanzamiento headless. La página carga de forma instantánea en cualquier país.&rdquo;
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--violet">SV</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Sofía Valenzuela</strong>
+                <span class="testimonial-card__role">VP of Digital Commerce &bull; Aura Luxury Goods</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <span class="testimonial-card__tag">Logística & IoT Cloud</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              &ldquo;Reescribir nuestra arquitectura con Cyberion nos permitió reducir un 65% nuestros costos de servidores cloud en AWS con disponibilidad del 99.999%.&rdquo;
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">DR</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Daniel Rothstein</strong>
+                <span class="testimonial-card__role">Head of Systems &bull; Vanguard Logistics Corp</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. LLAMADO FINAL A LA ACCIÓN
+         ======================================================================= -->
+    <section class="final-cta" aria-labelledby="final-cta-title">
+      <div class="final-cta__container">
+        <span class="final-cta__eyebrow">Empecemos Hoy</span>
+        <h2 class="final-cta__title" id="final-cta-title">
+          ¿Listo para dar el salto digital con Cyberion?
+        </h2>
+        <p class="final-cta__desc">
+          Contáctanos para una asesoría directa por WhatsApp o utiliza nuestro cotizador interactivo para obtener un presupuesto transparente en Dólares ($) y Bolívares (Bs.).
+        </p>
+        <div class="final-cta__actions">
+          <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20deseo%20asesor%C3%ADa%20sobre%20desarrollo%20de%20software" class="hero__btn hero__btn--whatsapp" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.072 6.223-1.633c1.7 1 3.7 1.633 5.877 1.633 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+            <span>Escribir por WhatsApp</span>
+          </a>
+          <a href="cotizador.html" class="hero__btn hero__btn--primary">
+            <span>Calcular Presupuesto Online</span>
+          </a>
+          <a href="contacto.html" class="hero__btn hero__btn--secondary">
+            <span>Formulario Formal de Contacto</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER CORPORATIVO (footer.footer)
+       ========================================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__top">
+        <!-- Columna de Marca -->
+        <div class="footer__brand-col">
+          <a href="index.html" class="footer__brand" aria-label="Cyberion - Volver arriba">
+            <span class="footer__logo-icon" aria-hidden="true">
+              <img src="icono.png" alt="Cyberion Logo" class="footer__logo-img" width="32" height="32">
+            </span>
+            <span class="footer__logo-text">CYBERION<span class="footer__logo-dot">.</span></span>
+          </a>
+          <p class="footer__tagline">
+            Ingeniería de software de vanguardia, sistemas distribuidos de baja latencia y experiencias web creadas para dominar industrias competitivas en Venezuela y América Latina.
+          </p>
+          <div class="footer__system-status" role="status">
+            <span class="footer__status-indicator" aria-hidden="true"></span>
+            <span class="footer__status-text">Todos los sistemas operativos &middot; 99.99% Cloud SLA</span>
+          </div>
+        </div>
+
+        <!-- Columna de Navegación Rápida -->
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Navegación</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="index.html" class="footer__link">Inicio</a></li>
+            <li class="footer__item"><a href="empresa.html" class="footer__link">Empresa</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Soluciones</a></li>
+            <li class="footer__item"><a href="cotizador.html" class="footer__link">Cotizador en Vivo</a></li>
+            <li class="footer__item"><a href="portafolio.html" class="footer__link">Casos de Éxito</a></li>
+            <li class="footer__item"><a href="contacto.html" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna de Soluciones Técnicas -->
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Especialidades</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Puntos de Venta (POS) & Facturación</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">E-Commerce WhatsApp Automatizado</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Plataformas Web Corporativas B2B</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">SaaS & Sistemas Administrativos</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Apps Móviles Nativas e Híbridas</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna de Redes / Conectividad -->
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Ecosistema</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>GitHub Enterprise</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>LinkedIn Corporate</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20deseo%20asesor%C3%ADa%20sobre%20desarrollo%20de%20software" target="_blank" rel="noopener noreferrer" class="footer__link">
+                <span>Atención WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          &copy; <span id="current-year">2026</span> Cyberion Technologies LLC. Todos los derechos reservados.
+        </div>
+        <div class="footer__legal">
+          <a href="#privacy" class="footer__legal-link">Aviso de Privacidad</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#terms" class="footer__legal-link">Términos de Servicio</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#security" class="footer__legal-link">Protocolos de Seguridad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de Acción Rápida (WhatsApp) -->
+  <div class="floating-quick-actions" aria-label="Acciones rápidas de contacto">
+    <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20deseo%20asesor%C3%ADa%20sobre%20desarrollo%20de%20software" class="floating-action-btn floating-action-btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <span class="floating-action-btn__icon" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.072 6.223-1.633c1.7 1 3.7 1.633 5.877 1.633 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Script Principal de la Aplicación -->
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Metadatos Corporativos -->
+  <title>Portafolio & Casos de Éxito | Cyberion — Software de Producción</title>
+  <meta name="description" content="Casos reales de ingeniería de software, comercio electrónico, sistemas administrativos y aplicaciones de alta concurrencia entregados por Cyberion en Venezuela y el mundo.">
+  <meta name="keywords" content="portafolio cyberion, casos de exito desarrollo software, proyectos web venezuela, ecommerce exitoso caracas, sistemas administrativos venezuela">
+  <meta name="author" content="Cyberion Engineering Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F8FAFC">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cyberion Venezuela">
+  <meta property="og:title" content="Portafolio & Casos de Éxito | Cyberion">
+  <meta property="og:description" content="Explora casos reales de software y aplicaciones web con métricas comprobables de disponibilidad, latencia y conversión comercial.">
+  <meta property="og:image" content="icono.png">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Oficial Circuit Emblem -->
+  <link rel="icon" type="image/jpeg" href="icono.png">
+  <link rel="icon" type="image/png" href="icono.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="icono.png">
+</head>
+<body class="site-body">
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- NAVBAR PRINCIPAL -->
+  <header class="navbar" id="site-header" role="banner">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand" aria-label="Cyberion - Página de Inicio">
+        <span class="navbar__logo-icon" aria-hidden="true">
+          <img src="icono.png" alt="Cyberion Logo" class="navbar__logo-img" width="34" height="34">
+        </span>
+        <span class="navbar__logo-text">CYBERION<span class="navbar__logo-dot">.</span></span>
+      </a>
+
+      <nav class="navbar__nav" id="primary-navigation" role="navigation" aria-label="Navegación principal">
+        <ul class="navbar__menu" role="menubar">
+          <li class="navbar__item" role="none">
+            <a href="index.html" class="navbar__link" role="menuitem" data-nav-link>Inicio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="empresa.html" class="navbar__link" role="menuitem" data-nav-link>Empresa</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="servicios.html" class="navbar__link" role="menuitem" data-nav-link>Soluciones</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="cotizador.html" class="navbar__link" role="menuitem" data-nav-link>Cotizador</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="portafolio.html" class="navbar__link navbar__link--active" role="menuitem" data-nav-link>Portafolio</a>
+          </li>
+          <li class="navbar__item" role="none">
+            <a href="contacto.html" class="navbar__link" role="menuitem" data-nav-link>Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <button type="button" class="navbar__theme-btn" id="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema">
+          <span class="navbar__theme-icon-box" aria-hidden="true">
+            <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <a href="cotizador.html" class="navbar__cta-btn" id="navbar-cta-quote">
+          <span class="navbar__cta-text">Cotizador en Vivo</span>
+          <svg class="navbar__cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button type="button" class="navbar__toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú de navegación">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- CABECERA DE PÁGINA -->
+    <section class="page-header">
+      <div class="page-header__container">
+        <span class="page-header__eyebrow">Casos de Éxito Validados &bull; Producción Real</span>
+        <h1 class="page-header__title">Portafolio de Ingeniería & Software Comercial</h1>
+        <p class="page-header__description">
+          Examinamos el impacto tangible de nuestras soluciones en entornos de alta demanda. Cada proyecto refleja estándares exigentes de latencia, seguridad y retorno de inversión comercial.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO DE PROYECTOS -->
+    <section class="portfolio" id="portfolio" style="padding-top: var(--space-2xl);" aria-labelledby="portfolio-title">
+      <div class="portfolio__container">
+        <!-- Barra de Filtros Dinámicos JS -->
+        <div class="portfolio__filter-bar" role="toolbar" aria-label="Filtro de proyectos del portafolio">
+          <button type="button" class="portfolio__filter-btn portfolio__filter-btn--active" data-filter="all" aria-pressed="true">
+            Todos <span class="portfolio__filter-count">(6)</span>
+          </button>
+          <button type="button" class="portfolio__filter-btn" data-filter="webapps" aria-pressed="false">
+            Web Apps <span class="portfolio__filter-count">(2)</span>
+          </button>
+          <button type="button" class="portfolio__filter-btn" data-filter="ecommerce" aria-pressed="false">
+            E-Commerce <span class="portfolio__filter-count">(2)</span>
+          </button>
+          <button type="button" class="portfolio__filter-btn" data-filter="systems" aria-pressed="false">
+            Sistemas <span class="portfolio__filter-count">(2)</span>
+          </button>
+        </div>
+
+        <!-- Grid de Proyectos -->
+        <div class="portfolio__grid" id="portfolio-grid" aria-live="polite">
+          <!-- Proyecto 1: Web App Financiera -->
+          <article class="portfolio-card" data-category="webapps">
+            <div class="portfolio-card__media">
+              <img src="assets/project-fintech.jpg" alt="Plataforma de Trading Algorítmico y Análisis en Tiempo Real" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Realtime Analytics &middot; WebSockets</div>
+              </div>
+              <span class="portfolio-card__badge">Web App</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Apex Financial Markets</div>
+              <h3 class="portfolio-card__title">Plataforma de Trading Algorítmico y Análisis en Tiempo Real</h3>
+              <p class="portfolio-card__summary">
+                Dashboard analítico para procesamiento de más de 45,000 transacciones por segundo con visualizaciones gráficas interactivas y retardo menor a 20ms.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">&lt; 18ms</span>
+                  <span class="portfolio-card__metric-key">Latencia P99</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">+340%</span>
+                  <span class="portfolio-card__metric-key">Volumen Operativo</span>
+                </div>
+              </div>
+              <div class="portfolio-card__tech-stack">
+                <span class="portfolio-card__tech-badge">Next.js</span>
+                <span class="portfolio-card__tech-badge">Rust Core</span>
+                <span class="portfolio-card__tech-badge">WebAssembly</span>
+                <span class="portfolio-card__tech-badge">Redis</span>
+              </div>
+              <div class="portfolio-card__action">
+                <button type="button" class="portfolio-card__details-btn" data-project-key="fintech">
+                  <span>Ver Arquitectura & Métricas</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: E-Commerce Moda Global -->
+          <article class="portfolio-card" data-category="ecommerce">
+            <div class="portfolio-card__media">
+              <img src="assets/project-ecommerce.jpg" alt="E-Commerce Headless Global con Checkout Instantáneo" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Headless Commerce &middot; Multi-Region</div>
+              </div>
+              <span class="portfolio-card__badge">E-Commerce</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Aura Luxury Goods</div>
+              <h3 class="portfolio-card__title">E-Commerce Headless Global con Checkout Instantáneo</h3>
+              <p class="portfolio-card__summary">
+                Migración completa a arquitectura desacoplada con soporte multimoneda en 18 países y tiempo de carga inferior a 600ms en dispositivos móviles.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">+42%</span>
+                  <span class="portfolio-card__metric-key">Tasa Conversión</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">0.58s</span>
+                  <span class="portfolio-card__metric-key">First Contentful Paint</span>
+                </div>
+              </div>
+              <div class="portfolio-card__tech-stack">
+                <span class="portfolio-card__tech-badge">Headless Shopify</span>
+                <span class="portfolio-card__tech-badge">TypeScript</span>
+                <span class="portfolio-card__tech-badge">Stripe Elements</span>
+                <span class="portfolio-card__tech-badge">Edge CDN</span>
+              </div>
+              <div class="portfolio-card__action">
+                <button type="button" class="portfolio-card__details-btn" data-project-key="ecommerce">
+                  <span>Ver Arquitectura & Métricas</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Sistema Crítico Logístico -->
+          <article class="portfolio-card" data-category="systems">
+            <div class="portfolio-card__media">
+              <img src="assets/project-logistics.jpg" alt="Motor Distribuido de Telemetría y Despacho Automatizado" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Distributed Mesh &middot; IoT Fleet</div>
+              </div>
+              <span class="portfolio-card__badge">Sistemas</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Vanguard Logistics Corp</div>
+              <h3 class="portfolio-card__title">Motor Distribuido de Telemetría y Despacho Automatizado</h3>
+              <p class="portfolio-card__summary">
+                Malla de microservicios para tracking geográfico en vivo de 15,000 unidades de transporte con balanceo dinámico y tolerancia estricta a fallos de red.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">99.999%</span>
+                  <span class="portfolio-card__metric-key">Disponibilidad</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">-65%</span>
+                  <span class="portfolio-card__metric-key">Costo Cloud Server</span>
+                </div>
+              </div>
+              <div class="portfolio-card__tech-stack">
+                <span class="portfolio-card__tech-badge">Go / Golang</span>
+                <span class="portfolio-card__tech-badge">Apache Kafka</span>
+                <span class="portfolio-card__tech-badge">Kubernetes</span>
+                <span class="portfolio-card__tech-badge">PostgreSQL</span>
+              </div>
+              <div class="portfolio-card__action">
+                <button type="button" class="portfolio-card__details-btn" data-project-key="logistics">
+                  <span>Ver Arquitectura & Métricas</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: Web App B2B SaaS -->
+          <article class="portfolio-card" data-category="webapps">
+            <div class="portfolio-card__media">
+              <img src="assets/project-saas.jpg" alt="Suite Colaborativa Cloud con Edición Concurrente Multiusuario" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Collaborative Canvas &middot; CRDT Sync</div>
+              </div>
+              <span class="portfolio-card__badge">Web App</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Syncro Enterprise Workspace</div>
+              <h3 class="portfolio-card__title">Suite Colaborativa Cloud con Edición Concurrente Multiusuario</h3>
+              <p class="portfolio-card__summary">
+                Espacio de trabajo web interactivo con algoritmos CRDT que posibilitan edición simultánea en tiempo real sin conflictos entre miles de usuarios empresariales.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">0 ms</span>
+                  <span class="portfolio-card__metric-key">Conflictos de Merge</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">100k+</span>
+                  <span class="portfolio-card__metric-key">DAU Activos</span>
+                </div>
+              </div>
+              <div class="portfolio-card__tech-stack">
+                <span class="portfolio-card__tech-badge">React</span>
+                <span class="portfolio-card__tech-badge">WebRTC</span>
+                <span class="portfolio-card__tech-badge">Node.js</span>
+                <span class="portfolio-card__tech-badge">IndexedDB</span>
+              </div>
+              <div class="portfolio-card__action">
+                <button type="button" class="portfolio-card__details-btn" data-project-key="saas">
+                  <span>Ver Arquitectura & Métricas</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 5: E-Commerce Marketplace B2B -->
+          <article class="portfolio-card" data-category="ecommerce">
+            <div class="portfolio-card__media">
+              <img src="assets/project-b2bmarket.jpg" alt="Marketplace B2B de Abastecimiento con Cotizador Automático" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">Multi-Vendor &middot; Custom Invoicing</div>
+              </div>
+              <span class="portfolio-card__badge">E-Commerce</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Metropolis Industrial Supplies</div>
+              <h3 class="portfolio-card__title">Marketplace B2B de Abastecimiento con Cotizador Automático</h3>
+              <p class="portfolio-card__summary">
+                Plataforma mayorista con catálogos jerárquicos personalizados por cliente, gestión de líneas de crédito automatizadas y generación de órdenes de compra ERP.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">$82M+</span>
+                  <span class="portfolio-card__metric-key">GMV Procesado</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">-80%</span>
+                  <span class="portfolio-card__metric-key">Tiempo de Compra</span>
+                </div>
+              </div>
+              <div class="portfolio-card__tech-stack">
+                <span class="portfolio-card__tech-badge">Vue.js 3</span>
+                <span class="portfolio-card__tech-badge">Python / FastAPI</span>
+                <span class="portfolio-card__tech-badge">ElasticSearch</span>
+                <span class="portfolio-card__tech-badge">AWS Aurora</span>
+              </div>
+              <div class="portfolio-card__action">
+                <button type="button" class="portfolio-card__details-btn" data-project-key="b2bmarket">
+                  <span>Ver Arquitectura & Métricas</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 6: Sistema de Ciberseguridad & Monitoreo -->
+          <article class="portfolio-card" data-category="systems">
+            <div class="portfolio-card__media">
+              <img src="assets/project-security.jpg" alt="Sistema Zero-Trust de Detección e Inmunización de Amenazas" class="portfolio-card__img" loading="lazy" width="600" height="340">
+              <div class="portfolio-card__overlay">
+                <div class="portfolio-card__tech-indicator">SIEM Integration &middot; Zero Trust</div>
+              </div>
+              <span class="portfolio-card__badge">Sistemas</span>
+            </div>
+            <div class="portfolio-card__content">
+              <div class="portfolio-card__client">Sentinel Defense Grid</div>
+              <h3 class="portfolio-card__title">Sistema Zero-Trust de Detección e Inmunización de Amenazas</h3>
+              <p class="portfolio-card__summary">
+                Mecanismo de inspección profunda de paquetes de red y control de identidades federadas con mitigación automatizada contra ataques de día cero y denegación DDoS.
+              </p>
+              <div class="portfolio-card__metrics">
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">100%</span>
+                  <span class="portfolio-card__metric-key">Inspección de Tráfico</span>
+                </div>
+                <div class="portfolio-card__metric-item">
+                  <span class="portfolio-card__metric-val">&lt; 3s</span>
+                  <span class="portfolio-card__metric-key">Auto-Mitigación</span>
+                </div>
+              </div>
+              <div class="portfolio-card__tech-stack">
+                <span class="portfolio-card__tech-badge">Rust</span>
+                <span class="portfolio-card__tech-badge">eBPF</span>
+                <span class="portfolio-card__tech-badge">Grafana</span>
+                <span class="portfolio-card__tech-badge">Docker</span>
+              </div>
+              <div class="portfolio-card__action">
+                <button type="button" class="portfolio-card__details-btn" data-project-key="security">
+                  <span>Ver Arquitectura & Métricas</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS Y REPUTACIÓN B2B -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="testimonials__container">
+        <header class="testimonials__header">
+          <span class="testimonials__eyebrow">Confianza de Líderes Tecnológicos</span>
+          <h2 class="testimonials__title" id="testimonials-title">Respaldados por Equipos de Alta Exigencia</h2>
+          <p class="testimonials__description">
+            Directores de Tecnología, Product Leaders y Fundadores que confiaron en Cyberion para modernizar su infraestructura y acelerar su ciclo de innovación.
+          </p>
+        </header>
+
+        <div class="testimonials__grid">
+          <!-- Testimonio 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__stars" aria-label="Calificación: 5 de 5 estrellas">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <span class="testimonial-card__tag">Fintech & High-Frequency</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              &ldquo;Cyberion redujo la latencia de nuestro motor de streaming a menos de 18ms. Nuestro volumen transaccional creció 3.4x sin un solo incidente de infraestructura. Su rigor técnico está al nivel de los mejores equipos de Silicon Valley.&rdquo;
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">AM</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Alejandro Morales</strong>
+                <span class="testimonial-card__role">Chief Technology Officer &bull; Apex Financial</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonio 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__stars" aria-label="Calificación: 5 de 5 estrellas">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <span class="testimonial-card__tag">E-Commerce Global</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              &ldquo;Nuestra tasa de conversión móvil aumentó un +42% en el primer mes tras el lanzamiento headless. La página carga de forma instantánea en cualquier país y el proceso de checkout en 1 click transformó nuestras ventas de temporada alta.&rdquo;
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--violet">SV</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Sofía Valenzuela</strong>
+                <span class="testimonial-card__role">VP of Digital Commerce &bull; Aura Luxury Goods</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonio 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__stars" aria-label="Calificación: 5 de 5 estrellas">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <span class="testimonial-card__tag">Logística & IoT Cloud</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              &ldquo;Reescribir nuestra arquitectura con Cyberion nos permitió reducir un 65% nuestros costos de servidores cloud en AWS, al tiempo que monitorizamos 15,000 vehículos en vivo con disponibilidad del 99.999%. Un equipo excepcional.&rdquo;
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">DR</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Daniel Rothstein</strong>
+                <span class="testimonial-card__role">Head of Systems &bull; Vanguard Logistics Corp</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Banner de Cierre -->
+        <div style="margin-top: var(--space-3xl); text-align: center; padding: var(--space-2xl); background: var(--color-surface-2); border: 1px solid var(--color-border); border-radius: var(--radius-xl);">
+          <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: var(--space-sm); color: var(--color-text-primary);">¿Deseas una solución con este nivel de calidad para tu empresa?</h3>
+          <p style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--space-lg); line-height: 1.6;">
+            Obtén un presupuesto exacto en minutos o contáctanos para evaluar la arquitectura técnica de tu próximo proyecto.
+          </p>
+          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+            <a href="cotizador.html" class="hero__cta hero__cta--primary">
+              <span>Calcular Presupuesto en el Cotizador</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="contacto.html" class="hero__cta hero__cta--secondary">
+              <span>Agendar Reunión Técnica</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE DETALLE TÉCNICO DE PROYECTO -->
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" aria-hidden="true">
+    <div class="project-modal__backdrop" id="modal-backdrop"></div>
+    <div class="project-modal__container" role="document">
+      <div class="project-modal__card">
+        <header class="project-modal__header">
+          <div class="project-modal__meta">
+            <span class="project-modal__badge" id="modal-project-badge">Web App</span>
+            <span class="project-modal__client" id="modal-project-client">Apex Financial Markets</span>
+          </div>
+          <button type="button" class="project-modal__close-btn" id="modal-close-btn" aria-label="Cerrar ficha de proyecto">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </header>
+
+        <div class="project-modal__body">
+          <div class="project-modal__media-preview">
+            <img src="assets/project-fintech.jpg" alt="Captura de Interfaz de Producción" id="modal-project-img" class="project-modal__img" loading="lazy" width="800" height="450">
+          </div>
+          <h3 class="project-modal__title" id="modal-project-title">Título del Proyecto</h3>
+          <p class="project-modal__description" id="modal-project-desc">Descripción...</p>
+
+          <div class="project-modal__sections-grid">
+            <div class="project-modal__section-block">
+              <h4 class="project-modal__section-label">El Reto de Negocio</h4>
+              <p class="project-modal__section-text" id="modal-project-challenge">Desafío...</p>
+            </div>
+            <div class="project-modal__section-block">
+              <h4 class="project-modal__section-label">Nuestra Solución de Ingeniería</h4>
+              <p class="project-modal__section-text" id="modal-project-solution">Solución...</p>
+            </div>
+          </div>
+
+          <div class="project-modal__metrics-bar" id="modal-project-metrics">
+            <!-- Métricas inyectadas dinámicamente -->
+          </div>
+
+          <div class="project-modal__stack-block">
+            <h4 class="project-modal__section-label">Stack Tecnológico Aplicado</h4>
+            <div class="project-modal__tech-chips" id="modal-project-stack">
+              <!-- Chips inyectados dinámicamente -->
+            </div>
+          </div>
+        </div>
+
+        <footer class="project-modal__footer">
+          <a href="cotizador.html" class="project-modal__cta-btn" id="modal-cta-quote">
+            <span>Cotizar un Proyecto Similar en el Simulador</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand-col">
+          <a href="index.html" class="footer__brand" aria-label="Cyberion - Volver arriba">
+            <span class="footer__logo-icon" aria-hidden="true">
+              <img src="icono.png" alt="Cyberion Logo" class="footer__logo-img" width="32" height="32">
+            </span>
+            <span class="footer__logo-text">CYBERION<span class="footer__logo-dot">.</span></span>
+          </a>
+          <p class="footer__tagline">
+            Ingeniería de software de vanguardia, sistemas distribuidos de baja latencia y experiencias web creadas para dominar industrias competitivas en Venezuela y América Latina.
+          </p>
+          <div class="footer__system-status" role="status">
+            <span class="footer__status-indicator" aria-hidden="true"></span>
+            <span class="footer__status-text">Todos los sistemas operativos &middot; 99.99% Cloud SLA</span>
+          </div>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Navegación</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="index.html" class="footer__link">Inicio</a></li>
+            <li class="footer__item"><a href="empresa.html" class="footer__link">Empresa</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Soluciones</a></li>
+            <li class="footer__item"><a href="cotizador.html" class="footer__link">Cotizador en Vivo</a></li>
+            <li class="footer__item"><a href="portafolio.html" class="footer__link">Casos de Éxito</a></li>
+            <li class="footer__item"><a href="contacto.html" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Especialidades</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Puntos de Venta (POS) & Facturación</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">E-Commerce WhatsApp Automatizado</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Plataformas Web Corporativas B2B</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">SaaS & Sistemas Administrativos</a></li>
+            <li class="footer__item"><a href="servicios.html" class="footer__link">Apps Móviles Nativas e Híbridas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-title">Ecosistema</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>GitHub Enterprise</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--external">
+                <span>LinkedIn Corporate</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20vi%20su%20portafolio%20y%20deseo%20cotizar%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="footer__link">
+                <span>Atención WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          &copy; <span id="current-year">2026</span> Cyberion Technologies LLC. Todos los derechos reservados.
+        </div>
+        <div class="footer__legal">
+          <a href="#privacy" class="footer__legal-link">Aviso de Privacidad</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#terms" class="footer__legal-link">Términos de Servicio</a>
+          <span class="footer__separator" aria-hidden="true">&bull;</span>
+          <a href="#security" class="footer__legal-link">Protocolos de Seguridad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de Acción Rápida (WhatsApp) -->
+  <div class="floating-quick-actions" aria-label="Acciones rápidas de contacto">
+    <a href="https://wa.me/584141682547?text=Hola%20Cyberion,%20vi%20su%20portafolio%20y%20deseo%20cotizar%20un%20proyecto" class="floating-action-btn floating-action-btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <span class="floating-action-btn__icon" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.928l-1.664 6.072 6.223-1.633c1.7 1 3.7 1.633 5.877 1.633 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+      </span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
